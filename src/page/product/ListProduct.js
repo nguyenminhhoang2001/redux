@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import { ProductApi } from "../../API/PRODUCTApi/ProductApi";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import "../../style/App.scss";
 
 const ListProduct = ({ children }) => {
   const [email, setEmail] = useState();

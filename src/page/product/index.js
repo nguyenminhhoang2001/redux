@@ -9,10 +9,8 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import { Link as LinkRouter, useNavigate } from "react-router-dom";
-import "/Users/Admin/Desktop/workspace/vti/react vti/redux-toolkit/src/style/App.scss";
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import "../../style/App.scss";
 const { Header, Content, Footer } = Layout;
 const HomeLayout = ({ children }) => {
   const [change, setChange] = useState(true);

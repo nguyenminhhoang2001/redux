@@ -4,7 +4,6 @@ import { Card } from "antd";
 import { Content } from "antd/es/layout/layout";
 import Sider from "antd/es/layout/Sider";
 import React, { useState, useEffect } from "react";
-import "../../style/App.scss";
 
 const Slice = () => {
   return (

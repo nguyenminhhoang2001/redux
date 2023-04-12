@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/App.scss";
 import { useSelector, useDispatch } from "react-redux";
 import { decre, deleteProduct, incre } from "../../featre/cartSilce";
 import { Button, Col, message, Row, Space } from "antd";

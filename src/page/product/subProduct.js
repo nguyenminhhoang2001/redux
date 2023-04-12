@@ -4,8 +4,6 @@ import { useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { ProductApi } from "../../API/PRODUCTApi/ProductApi";
 import { buyProduct } from "../../featre/cartSilce";
-import "../../style/App.scss";
-console.log("ok");
 const SubProduct = () => {
   const navigate = useNavigate();
   const [product, setProduct] = useState({});

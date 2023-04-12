@@ -11,6 +11,7 @@ import SubProduct from "./page/product/subProduct";
 import FormLogin from "./Login/FormLogin";
 import FormSignUp from "./Login/FormSignUp";
 import Pay from "./page/product/Pay";
+
 // const Product = lazy(() => import("./page/product/Product"));
 // const Admin = lazy(() => import("./Login/Index"));
 // const Home = lazy(() => import("./page/Home"));
