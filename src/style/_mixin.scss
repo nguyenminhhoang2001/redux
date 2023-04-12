@@ -1,0 +1,38 @@
+@import './variable';
+
+@mixin Responsive($breakPoint) {
+    @if $breakPoint ==mobile {
+        @media (max-width: #{$mobile-width }) {
+            @content;
+        }
+    }
+
+    @else if $breakPoint ==tablet {
+        @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width -1}) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (min-width: #{$desktop-width}) {
+            @content;
+        }
+    }
+}
+
+;
+
+$breakPoint1: (
+    "xs":575px,
+    "sm":577px,
+    "sd":768px
+);
+
+@mixin Responsive-map($breakPoint) {
+    @if map-has-key($breakPoint1 , $breakPoint ) {
+        @media(min-width: map-get($breakPoint1, $breakPoint)) {
+            @content
+        }
+    }
+
+}

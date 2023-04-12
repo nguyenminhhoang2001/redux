@@ -1,0 +1,349 @@
+@import'./variable';
+@import'./mixin';
+.site-layout-content {
+    min-height: 280px;
+    padding: 24px;
+  }
+  #components-layout-demo-top .logo {
+    float: left;
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .ant-row-rtl #components-layout-demo-top .logo {
+    float: right;
+    margin: 16px 0 16px 24px;
+  }
+  .id{
+    width: 50px;
+  }
+  .description{
+    width: 15%;
+  }
+  .image{
+    width: 35%;
+  }
+  .price{
+    width: 15%;
+  }
+  .name{
+    width: 15%;
+  }
+  .action{
+    width: 15%;
+  }
+  .underline{
+    cursor: pointer;
+  }
+ .underline:hover{
+  border-bottom:1px solid white ;
+  color: white;
+ }
+ .img-des{
+  color: white;
+  font-size: 25px;
+  display: flex;
+  line-height: 820px;
+  justify-content: center;
+  align-items: center;    
+}
+.box{
+  position: relative;
+  overflow: hidden;
+}
+.box:hover .img1{   transition: all 5s;
+  transform: scale(1.2);
+}
+ .img1 {
+  transition: all 5s;
+  transform: scale(1);
+  height: 820px;
+  width: 550px;
+  background-image:url(https://bizweb.dktcdn.net/100/347/891/themes/710583/assets/xxx_4.jpg?1677916253479) ;
+  background-size: cover
+  }
+
+  .box:hover .img2{   transition: all 5s;
+    transform: scale(1.2);
+  }
+  .img2 {
+    height: 820px;
+    width: 550px;
+    background-image:url(https://bizweb.dktcdn.net/100/347/891/themes/710583/assets/xxx_5.jpg?1677916253479) ;
+    background-size: cover
+    }
+    .box:hover .img3{   transition: all 5s;
+      transform: scale(1.2);
+    }
+     .img3 {
+      transition: all 5s;
+      transform: scale(1);
+      height: 820px;
+      width: 550px;
+      background-image:url(https://bizweb.dktcdn.net/100/347/891/themes/710583/assets/xxx_6.jpg?1677916253479) ;
+      background-size: cover
+      }
+      .box:hover .img4{   transition: all 5s;
+        transform: scale(1.2);
+      }
+       .img4 {
+        transition: all 5s;
+        transform: scale(1);
+        height: 820px;
+        width: 550px;
+        background-image:url(https://bizweb.dktcdn.net/100/347/891/themes/710583/assets/xxx_7.jpg?1677916253479) ;
+        background-size: cover
+        }
+        .box:hover .img5{   transition: all 5s;
+          transform: scale(1.2);
+        }
+         .img5 {
+          transition: all 5s;
+          transform: scale(1);
+          height: 820px;
+          width: 550px;
+          background-image:url(https://bizweb.dktcdn.net/100/347/891/themes/710583/assets/xxx_8.jpg?1677916253479) ;
+          background-size: cover
+          }
+          .box:hover .img6{   transition: all 5s;
+            transform: scale(1.2);
+          }
+           .img6 {
+            transition: all 5s;
+            transform: scale(1);
+            height: 820px;
+            width: 550px;
+            background-image:url(https://bizweb.dktcdn.net/100/347/891/themes/710583/assets/xxx_9.jpg?1677916253479) ;
+            background-size: cover
+            }
+
+
+            .hover-line{
+              cursor: pointer;
+              position: relative;
+              height: 550px;
+              width: 370px;
+              background-image:url(https://bizweb.dktcdn.net/thumb/grande/100/347/891/articles/147.jpeg?v=1658931869080) ;
+              background-size: cover
+              
+              }
+              .hover-line p{
+                position: absolute;
+                margin-top: 350px;
+                height: 150px;
+                width: 325px;
+                background-color: black;
+                transition: all 1s ease-in-out;//transition hiện ra nhẹ nhàng
+                opacity: 0.5;
+                }
+                .hover-line:hover p{
+                  opacity: 0  ;
+                  }
+              .animation-1 {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                right: 10px;
+                bottom: 10px;
+                margin: auto;
+                height: 90%;
+                width: 90%;
+                z-index: 5;
+                opacity: 0; //làm class biến mất
+                transition: all 1s ease-in-out;//transition hiện ra nhẹ nhàng
+                font-size: 10px;
+                background: rgba(0, 0, 0, 0.46);//background trong suốt
+                }
+                .animation-1  h2{
+                  position: absolute;
+                  color: white;
+                  left: 0;
+                  width: 100%;
+                  }
+                  .hover-line:hover .animation-1 {
+                  opacity: 1;//Khi hover vào class hover-line thì class animation-1 sẽ hiện ra
+                  }
+                  .hover-line2{
+                    cursor: pointer;
+                    position: relative;
+                    height: 550px;
+                    width: 370px;
+                    background-image:url(https://bizweb.dktcdn.net/thumb/grande/100/347/891/articles/316.jpeg?v=1621328833630) ;
+                    background-size: cover
+                    
+                    }
+                    .hover-line2 p{
+                      position: absolute;
+                      margin-top: 350px;
+                      height: 150px;
+                      width: 325px;
+                      background-color: black;
+                      transition: all 1s ease-in-out;//transition hiện ra nhẹ nhàng
+                      opacity: 0.5;
+                      }
+                      .hover-line2:hover p{
+                        opacity: 0  ;
+                        }
+                  
+                     
+                        .hover-line2:hover .animation-1 {
+                        opacity: 1;//Khi hover vào class hover-line thì class animation-1 sẽ hiện ra
+                        }
+                        .hover-line3{
+                          cursor: pointer;
+                          position: relative;
+                          height: 550px;
+                          width: 370px;
+                          background-image:url(https://bizweb.dktcdn.net/thumb/grande/100/347/891/articles/111.jpeg?v=1658931896370) ;
+                          background-size: cover
+                          
+                          }
+                          .hover-line3 p{
+                            position: absolute;
+                            margin-top: 350px;
+                            height: 150px;
+                            width: 325px;
+                            background-color: black;
+                            transition: all 1s ease-in-out;//transition hiện ra nhẹ nhàng
+                            opacity: 0.5;
+                            }
+                            .hover-line3:hover p{
+                              opacity: 0  ;
+                              }
+                        
+                           
+                              .hover-line3:hover .animation-1 {
+                              opacity: 1;//Khi hover vào class hover-line thì class animation-1 sẽ hiện ra
+                              }
+                              .hover-line4{
+                                cursor: pointer;
+                                position: relative;
+                                height: 550px;
+                                width: 370px;
+                                background-image:url(https://bizweb.dktcdn.net/thumb/grande/100/347/891/articles/201.jpeg?v=1621329143330) ;
+                                background-size: cover
+                                
+                                }
+                                .hover-line4 p{
+                                  position: absolute;
+                                  margin-top: 350px;
+                                  height: 150px;
+                                  width: 325px;
+                                  background-color: black;
+                                  transition: all 1s ease-in-out;//transition hiện ra nhẹ nhàng
+                                  opacity: 0.5;
+                                  }
+                                  .hover-line4:hover p{
+                                    opacity: 0  ;
+                                    }
+                              
+                                 
+                                    .hover-line4:hover .animation-1 {
+                                    opacity: 1;//Khi hover vào class hover-line thì class animation-1 sẽ hiện ra
+                                    }
+                                    .hover-line5{
+                                      cursor: pointer;
+                                      position: relative;
+                                      height: 550px;
+                                      width: 370px;
+                                      background-image:url(https://bizweb.dktcdn.net/thumb/grande/100/347/891/articles/300.jpeg?v=1621328215803) ;
+                                      background-size: cover
+                                      
+                                      }
+                                      .hover-line5 p{
+                                        position: absolute;
+                                        margin-top: 350px;
+                                        height: 150px;
+                                        width: 325px;
+                                        background-color: black;
+                                        transition: all 1s ease-in-out;//transition hiện ra nhẹ nhàng
+                                        opacity: 0.5;
+                                        }
+                                        .hover-line5:hover p{
+                                          opacity: 0  ;
+                                          }
+                                    
+                                       
+                                          .hover-line5:hover .animation-1 {
+                                          opacity: 1;//Khi hover vào class hover-line thì class animation-1 sẽ hiện ra
+                                          }
+                                          .hover-line6{
+                                            cursor: pointer;
+                                            position: relative;
+                                            height: 550px;
+                                            width: 370px;
+                                            background-image:url(https://bizweb.dktcdn.net/thumb/grande/100/347/891/articles/162.jpeg?v=1621327989277) ;
+                                            background-size: cover
+                                            
+                                            }
+                                            .hover-line6 p{
+                                              position: absolute;
+                                              margin-top: 350px;
+                                              height: 150px;
+                                              width: 325px;
+                                              background-color: black;
+                                              transition: all 1s ease-in-out;//transition hiện ra nhẹ nhàng
+                                              opacity: 0.5;
+                                              }
+                                              .hover-line6:hover p{
+                                                opacity: 0  ;
+                                                }
+                                          
+                                             
+                                                .hover-line6:hover .animation-1 {
+                                                opacity: 1;//Khi hover vào class hover-line thì class animation-1 sẽ hiện ra
+                                                }
+    
+  
+  //scss
+  $color-red:red;
+  $front-size:19px;
+  // h1{
+  //   color: $color-red;
+  //   h2{
+  //     font-size: $front-size;
+  //   }
+  // }
+  //minxin
+  // @mixin setFontSize($fz,$c){
+  //   font-size: $fz;
+  //   color: $c;
+  //   @if $fz >20{
+  //     color: black
+  //   }
+  //   @else {
+  //     color: white
+  //   }
+  // }
+  // h1{
+  //   @include setFontSize($front-size,$color-red )
+  // }
+  // h2{
+  //   @extend h1;
+  //   color:blue
+  // }
+  // @function setWith($parameter){
+  //   @return $parameter *2
+  // }
+
+  // .box{
+  //   @include Responsive(mobile){
+  //     color: red;
+  //   }
+  //   @include Responsive(tablet){
+  //     color: yellow;
+  //   }
+  //   // width: setWith($with);
+  //   // border: 1px solid black;
+  //   // height: 50px;
+  // }
+  // h2{
+  //   @include Responsive-map(xs){
+  //     font-size: 100px;
+  //   }
+  //   @include Responsive-map(sm){
+  //     font-size: 10px;
+  //   }
+  // }
+    // BEM
