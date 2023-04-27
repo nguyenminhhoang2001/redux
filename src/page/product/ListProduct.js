@@ -2,13 +2,14 @@ import { Button, Card, Carousel, Col, Input, Pagination, Row } from "antd";
 import Meta from "antd/es/card/Meta";
 import React, { useEffect, useState } from "react";
 import { ProductApi } from "../../API/PRODUCTApi/ProductApi";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import Spinjs from "./Spin";
 
 const ListProduct = ({ children }) => {
   const [email, setEmail] = useState();
   const [data, setData] = useState([]);
-
+  const { isLoading } = useSelector((state) => state.add);
   const dispatch = useDispatch();
   useEffect(() => {
     onPageChange();
@@ -39,6 +40,7 @@ const ListProduct = ({ children }) => {
       >
         <span style={{ borderBottom: "2px solid black" }}>ALL PRODUCT</span>
       </p>
+      {isLoading && <Spinjs />}
       <Row>
         {data.map((item) => (
           <Col span={6} key={item.id}>

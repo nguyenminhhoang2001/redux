@@ -3,10 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { fecthProduct } from "../../featre/productSlice";
 import ListProduct from "./ListProduct";
 import Slice from "./Slice";
-import Spinjs from "./Spin";
 const IndexProduct = () => {
   const { product } = useSelector((state) => state.add);
-  const { isLoading } = useSelector((state) => state.add);
   const dispath = useDispatch();
   useEffect(() => {
     dispath(fecthProduct());
@@ -15,7 +13,6 @@ const IndexProduct = () => {
     <div>
       <Slice />
       <ListProduct>{product}</ListProduct>
-      {isLoading && <Spinjs />}
     </div>
   );
 };
