@@ -1,6 +1,6 @@
 import axios from "axios";
 const AxiosClient = axios.create({
-  baseURL: "http://localhost:4000/",
+  baseURL: "https://api-lakshop.vercel.app/",
   headers: { "X-Custom-Header": "foobar" },
 });
 // Add a request interceptor
