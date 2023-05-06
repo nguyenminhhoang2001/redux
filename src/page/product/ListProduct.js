@@ -28,7 +28,6 @@ const ListProduct = ({ children }) => {
     textAlign: "center",
     background: "white",
   };
-
   return (
     <>
       <p
